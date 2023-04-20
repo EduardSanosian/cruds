@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AutoController!{% endblock %}
+
+{% block body %}
+ <div class="container">
+     <div class="row">
+         <div class="col">
+             <table class="table">
+             {% for auto in autos %}
+        <thead>
+        <tr>
+            <th scope="col">
+                number
+            </th>
+            <th scope="col">
+                model
+            </th>
+            <th scope="col">
+                type
+            </th>
+        </tr>
+        </thead>
+                 <tbody>
+                 <tr>
+                     <td>
+                         {{ auto.id }}
+                     </td>
+                     <
+                 </tr>
+                 </tbody>
+
+
+
+                 {% endfor %}
+             </table>
+         </div>
+     </div>
+ </div>
+{% endblock %}
